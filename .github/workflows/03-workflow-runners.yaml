@@ -13,6 +13,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Show Windows runner
+        shell: bash
         run: |
           echo "This job is running on $RUNNER_OS with $RUNNER_NAME."
   macos-echo:
