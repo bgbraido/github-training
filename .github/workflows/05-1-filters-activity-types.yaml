@@ -1,0 +1,14 @@
+name: 05 - 1 - Event Filters and Activity Types
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize # This workflow will run when a PR is opened or synchronized
+    branches:
+      - main # This workflow will only run for PRs targeting the main branch
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running whenever a PR is opened or syncronized AND base branch is main"
