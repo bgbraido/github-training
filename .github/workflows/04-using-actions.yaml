@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
         #working-directory: 04-using-actions/react-app
-      - name: Run tests
+      - name: Run Unit Tests
         run: npm run test #This is based on the package.json file in the react-app folder
         #working-directory: 04-using-actions/react-app
 
