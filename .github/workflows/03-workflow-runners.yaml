@@ -1,0 +1,24 @@
+name: 03 - Workflow Runners
+
+on: workflow_dispatch # Allows manual triggering of the workflow
+
+jobs:
+  ubuntu-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Ubuntu runner
+        run: |
+          echo "This job is running on $RUNNER_OS with $RUNNER_NAME."
+  windows-echo:
+    runs-on: windows-latest
+    steps:
+      - name: Show Windows runner
+        shell: bash # Using bash shell to show compatibility
+        run: |
+          echo "This job is running on $RUNNER_OS with $RUNNER_NAME."
+  macos-echo:
+    runs-on: macos-latest
+    steps:
+      - name: Show macOS runner
+        run: |
+          echo "This job is running on $RUNNER_OS with $RUNNER_NAME."
