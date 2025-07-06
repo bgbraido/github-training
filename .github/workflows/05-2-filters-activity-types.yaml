@@ -6,6 +6,7 @@ on:
       - closed
     branches:
       - main # This workflow will only run for PRs targeting the main branch
+      - develop # This workflow will also run for PRs targeting the develop branch
 jobs:
   echo:
     runs-on: ubuntu-latest
