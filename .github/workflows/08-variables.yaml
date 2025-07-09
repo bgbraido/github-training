@@ -29,3 +29,19 @@ jobs:
           OVERWRITE: "I have been overwritten at the step level"
         run: |
           echo "Overwritten env var: ${{ env.OVERWRITE }}"
+
+  echo2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Env Variables
+        run: |
+          # echo "Org var: ${{ vars.ORG_VAR }}"
+          echo "Repo var: ${{ vars.REPOSITORY_VAR }}"
+  echo-prod:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - name: Print Env Variables
+        run: |
+          echo "This job runs in the prod environment"
+          echo "Repo var: ${{ vars.REPOSITORY_VAR }}"
