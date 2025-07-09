@@ -1,0 +1,7 @@
+{
+  "gitlens.currentLine.enabled": true,
+  "gitlens.currentLine.location": "inline",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "git.blame.statusBarItem.enabled": false
+}
