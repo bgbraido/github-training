@@ -21,7 +21,7 @@ jobs:
           # npm run build
   unit-tests:
     runs-on: ubuntu-latest
-    continue-on-error: true
+    # continue-on-error: true This used in case a step fails, the job will continue
     steps:
       - name: Run Unit Tests
         run: echo "Running unit tests..."
