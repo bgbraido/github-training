@@ -6,7 +6,7 @@ on:
       use-cache:
         description: Whether to execute cache step
         type: boolean
-        default: "true"
+        default: true
 
 jobs:
   build:
